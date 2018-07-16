@@ -19,3 +19,5 @@ make these files
     configure.enzyme.js
 
 make files name.jsx and name.test.jsx
+
+npm install --save react-test-renderer
