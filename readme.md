@@ -12,7 +12,7 @@
 
 npm install --save enzyme
 npm install react react-dom
- npm install --save enzyme-adapter-react-16
+npm install --save enzyme-adapter-react-16
 
 make these files
     jest.config.js

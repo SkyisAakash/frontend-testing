@@ -1,4 +1,7 @@
 import React, {Component} from 'react';
+import Foo from './foo'
+import { SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION } from 'constants';
+
 class Counter extends Component {
     constructor(props) {
         super(props);
@@ -14,11 +17,20 @@ class Counter extends Component {
         });
     }
 
+    makeFoo() {
+        let returnArr = [];
+        for (let i = 0; i < this.state.count; i++) {
+            returnArr.push(<Foo key={i}/>)
+        }
+        return returnArr;
+    }
+
     render() {
         return (
         <div>
             <p>count: {this.state.count} </p>
-            <button onClick={this.add1}></button>
+            <button className="add1" onClick={this.add1}></button>
+            {this.makeFoo()}
         </div>
         )
     }
