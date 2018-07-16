@@ -1,5 +1,5 @@
-const sum = require('./sum');
-
+// const sum = require('./sum');
+import sum from './sum';
 describe('Sum', () => {
     it ("adds two numebrs", () => {
         expect(sum(1,3)).not.toBe(40);
