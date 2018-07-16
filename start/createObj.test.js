@@ -1,5 +1,5 @@
 
-import createObj from './createObj';
+import createObj from './start/createObj';
 
 describe('createObj', () => {
     it ("['a','b'],[1,2] => {a:1,b:2}", () => {
